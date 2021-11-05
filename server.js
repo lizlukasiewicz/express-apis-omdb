@@ -15,7 +15,7 @@ app.use(require('morgan')('dev')); //THIS IS WHAT creates the response in termin
 
 //<<--STATIC FILES just means that this info isnt going to change
 
-//create a home route
+//    create a home route
 app.get('/', (req, res) => {
   res.render('index')
 })
@@ -66,4 +66,4 @@ app.listen(PORT, () => {
 var server = app.listen(process.env.PORT || 3000);  //says to look for PORT number in the env file OR  just default to 3000 
 
 // We can export this server to other servers like this
-module.exports = server; //
+module.exports = server; 
